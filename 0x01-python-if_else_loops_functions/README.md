@@ -11,3 +11,4 @@
 11-pow.py - a function that computes a to the power of b and return the value.
 12-fizzbuzz.py - a function that prints the numbers from 1 to 100 separated by a space.
 13-insert_number.c - 13. Insert in sorted linked list
+100-print_tebahpla.py - a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
