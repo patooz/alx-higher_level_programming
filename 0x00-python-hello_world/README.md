@@ -7,3 +7,4 @@
 7-edges.py - a python script that cuts and pastes a string
 8-concat_edges.py - a python script that prints a line, followed by a new line
 9-easter_egg.py - a python script that prints The Zen of python
+10-check_cycle.c - a c program that checks if there is loop in a linked list
