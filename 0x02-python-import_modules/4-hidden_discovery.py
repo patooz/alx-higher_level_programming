@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name == "__name__":
+if __name == "__main__":
     import hidden_4
 
     items = dir(hidden_4)
