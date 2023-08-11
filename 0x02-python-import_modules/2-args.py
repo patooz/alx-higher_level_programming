@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if typing == 0:
         print("0 arguments.")
     elif typing == 1:
-        print("! argument:")
+        print("1 argument:")
     else:
         print("{} arguments:".format(typing))
     for i in range(typing):
