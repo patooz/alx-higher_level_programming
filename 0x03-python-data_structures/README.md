@@ -4,3 +4,4 @@
 4-new_in_list.py - a function that replaces an element in a list at a specific position without modifying the original list (like in C).
 5-no_c.py - a function that removes all characters c and C from a string.
 6-print_matrix_integer.py - a function that prints a matrix of integers.
+7-add_tuple.py - a function that adds 2 tuples.
