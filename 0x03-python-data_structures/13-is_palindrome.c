@@ -1,4 +1,24 @@
 #include "lists.h"
+/**
+ * back_int - reverses the linked list
+ * @head: pointer to the linked list
+ * Return: pointer to the node
+ */
+void back_int(listint_t **head)
+{
+        listint_t *p = NULL;
+        listint_t *now = *head;
+        listint_t *next = NULL;
+
+        while (now)
+        {
+                next = now->next;
+                now->next = p;
+                p = now;
+                now = next;
+        }
+        *head = p;
+}
 
 /**
  * is_palindrome - checks if the linked list ia a palindrome
@@ -40,24 +60,4 @@ int is_palindrome(listint_t **head)
 	if (!d)
 		return (1);
 	return (0);
-}
-/**
- * back_int - reverses the linked list
- * @head: pointer to the linked list
- * Return: pointer to the node
- */
-void back_int(listint_t **head)
-{
-	listint_t *p = NULL;
-	listint_t *now = *head;
-	listint_t *next = NULL;
-
-	while (now)
-	{
-		next = now->next;
-		now->next = p;
-		p = now;
-		now = next;
-	}
-	*head = p;
 }
