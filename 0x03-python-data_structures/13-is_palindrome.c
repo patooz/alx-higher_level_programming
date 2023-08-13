@@ -7,15 +7,15 @@
 void back_int(listint_t **head)
 {
         listint_t *p = NULL;
-        listint_t *now = *head;
+        listint_t *c = *head;
         listint_t *next = NULL;
 
-        while (now)
+        while (c)
         {
-                next = now->next;
-                now->next = p;
-                p = now;
-                now = next;
+                next = c->next;
+                c->next = p;
+                p = c;
+                c = next;
         }
         *head = p;
 }
