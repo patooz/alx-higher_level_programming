@@ -18,14 +18,15 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 	j = ((PyVarObject *)(p))->ob_size;
-	i = ((PyBytesObjeect *)p)->ob_sval;
+	i = ((PyBytesObject *)p)->ob_sval;
 	printf("  size: %ld\n", j);
+	printf("  trying string: %s\n", i);
 	if (j >= 10)
 		l = 10;
 	else
 		l = j + 1;
 	printf("  first %ld bytes:", limit);
-	for (x = 0; x < limit; x++)
+	for (x = 0; x < l; x++)
 		if (i[x] >= 0)
 			printf("  %02x", i[x]);
 		else
@@ -55,7 +56,7 @@ void print_python_bytes(PyObject *p)
 	{
 		l = ((PyListObject *)p)->ob_item[z];
 		printf("Element %ld: %s\n", z, ((x)->ob_type)->tp_name);
-		if (PyBytes_Check(x))
-			print_python_bytes(x);
+		if (PyBytes_Check(l))
+			print_python_bytes(l);
 	}
 }
