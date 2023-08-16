@@ -14,3 +14,4 @@
 100-weight_average.py - a function that returns the weighted average of all integers tuple (<score>, <weight>)
 101-square_matrix_map.py - a function that computes the square value of all integers of a matrix using map
 102-complex_delete.py - a function that deletes keys with a specific value in a dictionary.
+103-python.c - C functions that print some basic info about Python lists and Python bytes objects.
