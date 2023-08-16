@@ -35,11 +35,11 @@ void print_python_bytes(PyObject *p)
 }
 
 /**
- * print_python_bytes - prints python list info
+ * print_python_list - prints python list info
  * @p: object
  * Return: null
  */
-void print_python_bytes(PyObject *p)
+void print_python_list(PyObject *p)
 {
 	long int i, j;
 	PyListObject *k;
