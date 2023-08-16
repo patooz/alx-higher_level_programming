@@ -6,4 +6,4 @@ def uniq_add(my_list=[]):
         if i not in brand_list:
             sum += i
             brand_list.append(i)
-    return i
+    return sum
