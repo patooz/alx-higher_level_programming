@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <Python.h>
 /**
- * print_python_float - prints python floating points
+ * print_pytihon_float - prints python floating points
  * @p: PyObject
  */
 void print_python_float(PyObject *p)
@@ -17,7 +17,7 @@ void print_python_float(PyObject *p)
 		return;
 	}
 	val = ((PyFloatObject *)p)->ob_fval;
-	str = PyOs_double_to_string(val, 'r', 0, Py_DTSF_ADD_DOT_0, NULL);
+	str = PyOS_double_to_string(val, 'r', 0, Py_DTSF_ADD_DOT_0, NULL);
 	printf("  value: %s\n", string);
 }
 /**
@@ -38,7 +38,7 @@ void print_python_bytes(PyObject *p)
 	}
 	i = PyBytes_Size(p);
 	printf("  size: %zd\n", i);
-	str = (assert(PyBytes_check(p)), (((PyBytesObject *)(p))->ob_sval));
+	str = (assert(PyBytes_Check(p)), (((PyBytesObject *)(p))->ob_sval));
 	printf("  trying string: %s\n", str);
 	printf("  first %zd bytes:", i < 10 ? i + 1 : 10);
 	while (j < i + 1 && j < 10)
