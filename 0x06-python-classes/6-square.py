@@ -25,11 +25,11 @@ class Square:
 
     @property
     def position(self):
+        """ sets the current position of the square """
         return (self.__position)
 
     @position.setter
     def position(self, value):
-        """ sets the position of the square """
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(k, int) for k in value) or
