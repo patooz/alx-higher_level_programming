@@ -56,9 +56,9 @@ class SinglyLinkedList:
 
         def __str__(self):
             """ prints the singly linked list """
-            my_ints = []
+            values = []
             tmp = self.__head
             while tmp is not None:
-                my_ints.append(str(tmp.data))
+                values.append(str(tmp.data))
                 tmp = tmp.next_node
-            return ('\n'.join(my_ints))
+            return ('\n'.join(values))
