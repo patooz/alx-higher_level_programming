@@ -10,7 +10,7 @@ class Square:
         """ initialization if the new square """
         self.size = size
 
-        @property
+    @property
     def size(self):
         """ sets the size of the square """
         return (self.__size)
