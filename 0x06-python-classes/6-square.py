@@ -5,6 +5,7 @@
 
 class Square:
     """square representation """
+
     def __init__(self, size=0, position=(0, 0)):
         """ initialization if the new square """
         self.size = size
