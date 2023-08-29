@@ -4,10 +4,10 @@
 
 
 class Square:
-    """square representation """
+    """square class representation """
 
     def __init__(self, size=0, position=(0, 0)):
-        """ initialization if the new square """
+        """ initialization of the new square """
         self.size = size
         self.position = position
 
