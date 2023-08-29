@@ -10,7 +10,7 @@ class Square:
         """ initialization if the new square """
 
         if not isinstance(size, int):
-            raise TypError("size must be an integer")
+            raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be an integer")
         size.__self = size
