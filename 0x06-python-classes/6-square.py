@@ -1,10 +1,18 @@
+#!/usr/bin/python3
+
+""" class square definition """
+
+
 class Square:
+    """square representation """
     def __init__(self, size=0, position=(0, 0)):
+        """ initialization if the new square """
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """ sets the size of the square """
         return(self.__size)
 
     @size.setter
@@ -21,6 +29,7 @@ class Square:
 
     @position.setter
     def position(self, value):
+        """ sets the position of the square """
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(k, int) for k in value) or
@@ -29,9 +38,11 @@ class Square:
         self.__position = value
 
     def area(self):
+        """ returns the current size of the square """
         return (self.__size * self.__size)
 
     def my_print(self):
+        """" prints the # character """
         if self.__size == 0:
             print("")
             return
