@@ -53,13 +53,13 @@ class Square:
             [print("#", end="") for m in range(0, self.__size)]
             print("")
 
-        def __str__(self):
-            """ prints the singly linked list """
-            if self.__size != 0:
-                [print("") for j in range(0, self.__position[1])]
-            for j in range(0, self.__size):
-                [print(" ", end="") for x in range(0, self.__position[0])]
-                [print("#", end="") for m in range(0, self.__size)]
-                if j != self.__size - 1:
-                    print("")
-            return ("")
+    def __str__(self):
+        """ prints the singly linked list """
+        if self.__size != 0:
+            [print("") for j in range(0, self.__position[1])]
+        for j in range(0, self.__size):
+            [print(" ", end="") for x in range(0, self.__position[0])]
+            [print("#", end="") for m in range(0, self.__size)]
+            if j != self.__size - 1:
+                print("")
+        return ("")
