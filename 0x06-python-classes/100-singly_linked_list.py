@@ -5,6 +5,7 @@
 
 class Node:
     """ this is the node in a singly list """
+
     def __init__(self, data, next_node=None):
         """ starting the node """
         self.data = data
