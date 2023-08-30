@@ -40,19 +40,19 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
         """ inserts a new node to the singly list """
-        brand = Node(value)
+        new = Node(value)
         if self.__head is None:
-            brand.next_node = None
-            self.__head = brand
+            new.next_node = None
+            self.__head = new
         elif self.__head.data > value:
-            brand.next_node = self.__head
-            self.__head = brand
+            new.next_node = self.__head
+            self.__head = new
         else:
             tmp = self.__head
             while (tmp.next_node is not None and tmp.next_node.data < value):
                 tmp = tmp.next_node
-            brand.next_node = tmp.next_node
-            tmp.next_node = brand
+            new.next_node = tmp.next_node
+            tmp.next_node = new
 
         def __str__(self):
             """ prints the singly linked list """
