@@ -26,26 +26,26 @@ class Square:
         """ returns the current size of the square """
         return (self.__size * self.__size)
 
-    def __greaterthan__(self, value):
+    def __greaterthan__(self, val):
         """ defines the > comparator """
-        return self.area() > value.area()
+        return self.area() > val.area()
 
-    def __lessthan__(self, value):
+    def __lessthan__(self, val):
         """ defines the < comparator """
-        return self.area() < value.area()
+        return self.area() < val.area()
 
-    def __greaterequal__(self, value):
+    def __greaterequal__(self, val):
         """ defines the >= comparator """
-        return self.area() >= value.area()
+        return self.area() >= val.area()
 
-    def __lessequal__(self, value):
+    def __lessequal__(self, val):
         """ definea the <= comparator """
-        return self.area() <= value.area()
+        return self.area() <= val.area()
 
-    def __equal__(self, value):
+    def __equal__(self, val):
         """ defines the == comparator """
-        return self.area() == value.area()
+        return self.area() == val.area()
 
-    def __notequal__(self, value):
+    def __notequal__(self, val):
         """ defines the != comparator """
-        return self.area() != value.area()
+        return self.area() != val.area()
