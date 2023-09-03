@@ -1,0 +1,33 @@
+Method to test
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Strings given
+
+	>>> say_my_name("First", "Last")
+	My name is First Last
+
+	>>> say_my_name("John")
+	My name is John
+
+On failure
+
+	>>> say_my_name(123, "Last")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+Extra arguments
+
+	>>> say_my_name("John", "Dracula", "Doe")
+	Traceback (most recent call last):
+	TypeError: fuction takes 2 arguments but 3 provided
+
+Few arguments
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: function is missing 1 requred argument
+
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
