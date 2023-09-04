@@ -8,3 +8,4 @@
 7-rectangle.py - a function that prints a symbol #
 8-rectangle.py - a function that compare the size of a rectangle
 9-rectangle.py - a function that returns a new rectangle with same width and height
+101-nqueens.py - a program that solves the N queens puzzle
