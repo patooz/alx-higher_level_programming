@@ -5,3 +5,4 @@
 4-rectangle.py - a function that returns a string representation of a rectangle
 5-rectangle.py - a fuction that deletes a rectangle
 6-rectangle.py - a function that prints a number of instances
+7-rectangle.py - a function that prints a symbol #
