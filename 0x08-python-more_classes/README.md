@@ -7,3 +7,4 @@
 6-rectangle.py - a function that prints a number of instances
 7-rectangle.py - a function that prints a symbol #
 8-rectangle.py - a function that compare the size of a rectangle
+9-rectangle.py - a function that returns a new rectangle with same width and height
