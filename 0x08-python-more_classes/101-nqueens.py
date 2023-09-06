@@ -29,7 +29,7 @@ def solved(chessboard):
     return (sol)
 
 
-def stopx(chessboard, col, row):
+def stopx(chessboard, row, col):
     """ places where fallen queens are obselete """
     for y in range(col + 1, len(chessboard)):
         chessboard[row][y] = "x"
@@ -72,10 +72,10 @@ def fullsolve(chessboard, row, gis, sol):
         return (sol)
     for y in range(len(chessboard)):
         if chessboard[row][y] == " ":
-            tmp_board = another_board(chessboard)
-            tmp_board[row][y] = "Q"
-            stopx(tmp_board, row, y)
-            sol = fullsolve(tmp_board, row + 1, gis + 1, sol)
+            my_board = another_board(chessboard)
+            my_board[row][y] = "Q"
+            stopx(my_board, row, y)
+            sol = fullsolve(my_board, row + 1, gis + 1, sol)
     return (sol)
 
 
