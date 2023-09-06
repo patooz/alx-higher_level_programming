@@ -7,7 +7,7 @@ def chess(n):
     """ chessboard of size n """
     floor = []
     [floor.append([]) for i in range(n)]
-    [m_r.append(' ') for i in range(n) for m_r in floor]
+    [row.append(' ') for i in range(n) for row in floor]
     return (floor)
 
 
@@ -71,9 +71,9 @@ def fullsolve(chessboard, row, gis, sol):
         sol.append(solved(chessboard))
         return (sol)
     for y in range(len(chessboard)):
-        if chessboard[row][x] == " ":
+        if chessboard[row][y] == " ":
             my_board = another_board(chessboard)
-            my_board[row][c] = "Q"
+            my_board[row][y] = "Q"
             stopx(my_board, row, y)
             sol = fullsolve(my_board, row + 1, gis + 1, sol)
     return (sol)
