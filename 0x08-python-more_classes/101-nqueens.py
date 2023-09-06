@@ -5,10 +5,10 @@ import sys
 
 def chess(n):
     """ chessboard of size n """
-    floor = []
-    [floor.append([]) for i in range(n)]
-    [row.append(' ') for i in range(n) for row in floor]
-    return (floor)
+    chessboard = []
+    [chessboard.append([]) for i in range(n)]
+    [row.append(' ') for i in range(n) for row in chessboard]
+    return (chessboard)
 
 
 def another_board(chessboard):
