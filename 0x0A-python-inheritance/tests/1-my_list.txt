@@ -1,0 +1,78 @@
+Module docstring:
+	>>> m = __import__("1-my_list").__doc__
+	>>> len(m) > 1
+	True
+
+Class docstring:
+	>>> c = __import__("1-my_list").MyList.__doc__
+	>> len(c) > 1
+	True
+
+Method docstring:
+	>>> mod = 
+	 __import__("1-my_list").MyList.print_sorted.__doc__
+	>>> len(mod) > 1
+	True
+
+Inheritance from list:
+	>>> issubclass(MyList, list)
+	True
+
+Empty list:
+	>>> l = MyList()
+	>>> l.print_sorted()
+	[]
+
+Appending:
+	>>> l.append(1)
+	>>> l.append(2)
+	>>> l.append(3)
+	>>> l.append(4)
+	>>> print(1)
+	[1, 2, 3, 4]
+
+List in order:
+	>>> l.print_sorted()
+	[1, 2, 3, 4]
+
+Reverse order list:
+	>>> l = MyList()
+	>>> l.append(4)
+	>>> l.append(3)
+	>>> l.append(2)
+	>>> l.append(1)
+	>>> print(l)
+	[4, 3, 2, 1]
+	>>> l,print_sorted()
+	[1, 2, 3, 4]
+	>>> print(l)
+	[4, 3, 2, 1]
+
+Negative numbers:
+	>>> l.append(-1)
+	>>> l.append(5)
+	>>> print(l)
+	[4, 3, 2, 1, -1, 5]
+	>>> l.print_sorted()
+	[-1, 1, 3, 4, 5]
+	>>> print(l)
+	[4, 3, 2, 1, -1, 5]
+
+All negative numbers:
+	>>> l = MyList()
+	>>> l.append(-10)
+	>>> l.append(-1)
+	>>> l.append(-7)
+	>>> l.append(-2)
+	>>> l.append(-8)
+	>>> print(l)
+	[-10, -8, -7, -2, -1]
+	>>> print(l)
+	    [-10, -1, -7, -2, -8]
+
+Many arguments:
+	>>> l.print_sorted(1)
+	Traceback (most recent call last):
+	...
+	TypeError: print_sorted() takes 1 positional argument
+	but got 2
