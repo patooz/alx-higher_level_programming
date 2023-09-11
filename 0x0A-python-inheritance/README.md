@@ -5,3 +5,4 @@
 4-inherits_from.py - a function that returns True if the object is an instance of a class that inherited
 5-base_geometry.py - an empty class BaseGeometry.
 6-base_geometry.py - a class BaseGeometry (based on 5-base_geometry.py).
+7-base_geometry.py - a class BaseGeometry (based on 6-base_geometry.py).
