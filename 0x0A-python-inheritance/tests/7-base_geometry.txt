@@ -1,0 +1,33 @@
+Importing the function module
+	>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+Module docstring testing:
+	>>> m = __import__("7-base_geometry").__doc__
+	>>> len(m) > 1
+	True
+
+Class doctring:
+	>>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+	>>> len(c) > 1
+	True
+
+Method docstring:
+	>>> pr = __import__("7-base_geometry").BaseGeometry.area.__doc__
+	>>> len(pr) > 1
+	True
+	>>> pt =  __import__("7-base_geometry").BaseGeometry.integer_validate.__doc__
+	>>> len(pt) > 1
+	True
+
+Area failure:
+	>>> b = BaseGeometry()
+	>>> b.area()
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented
+
+Area too many arguments:
+	>>> b.area(1)
+	Traceback (most recent call last):
+	...
+	TypeError: area() takes 1 argument
