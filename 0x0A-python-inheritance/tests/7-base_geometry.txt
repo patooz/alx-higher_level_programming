@@ -1,4 +1,4 @@
-Importing the function module
+Importing the function module:
 	>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 Module docstring testing:
@@ -31,3 +31,53 @@ Area too many arguments:
 	Traceback (most recent call last):
 	...
 	TypeError: area() takes 1 argument
+
+Validation for int:
+	>>> b.integer_validator("integer", 1)
+
+Int test:
+	>>> b.integer_validator("integer", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: integer must be greater than 0
+
+Int test for less than zero:
+	>>> b.integer_validator("integer", -5)
+	Traceback (most recent call last):
+	...
+	ValueError: integer must be greater than 0
+
+Non int test:
+	>>> b.integer_validator("bool", True)
+	Traceback (most recent call last):
+	...
+	TypeError: bool must be an integer
+	>>> b.integer_validator("float", 1.5)
+	Traceback (most recent call last):
+	...
+	TypeError: float must be an integer
+	>>> b.integer_validator("complex", complex(1, 1))
+	Traceback (most recent call last):
+	...
+	TypeError: complex must be an integer
+
+No arg for integer_validator:
+	>>> b.integer_validator()
+	Traceback (most recent call last):
+	...
+	TypeError: integer_validator() missing 2 required
+	positional arguments: 'name' and 'value'
+
+Only one argument provided to integer_validator():
+	 >>> b.integer_validator("integer")
+	Traceback (most recent call last):
+	...
+	TypeError: integer_validator() missing 1 required
+	positional arguments: 'value'
+
+Too many args:
+	>>> b.integer_validator("integer", 1, 2)
+	Traceback (most recent call last):
+	...
+	TypeError: integer_validator() takes 3 positional
+	arguments but 4 weere given
