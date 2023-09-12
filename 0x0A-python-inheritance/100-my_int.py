@@ -5,10 +5,10 @@
 class MyInt(int):
     """ manipulates the operators """
 
-    def __equalsto__(self, value):
+    def __eq__(self, value):
         """ changes == to != """
         return self.real != value
 
-    def __notequalto__(self, value):
+    def __ne__(self, value):
         """ changes != to == """
         return self.real == value
