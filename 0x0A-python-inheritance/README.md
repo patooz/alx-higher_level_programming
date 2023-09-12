@@ -10,3 +10,4 @@
 9-rectangle.py - a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
 10-square.py - a class Square that inherits from Rectangle (9-rectangle.py
 11-square.py - a class Square that inherits from Rectangle (9-rectangle.py)
+100-my_int.py - a class MyInt that inherits from int
