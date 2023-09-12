@@ -15,7 +15,7 @@ Method docstring:
 	>>> pr = __import__("7-base_geometry").BaseGeometry.area.__doc__
 	>>> len(pr) > 1
 	True
-	>>> pt =  __import__("7-base_geometry").BaseGeometry.integer_validate.__doc__
+	>>> pt =  __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
 	>>> len(pt) > 1
 	True
 
