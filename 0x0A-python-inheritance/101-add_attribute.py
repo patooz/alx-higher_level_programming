@@ -2,8 +2,8 @@
 """ adds attributes to objects """
 
 
-def _attribute(obj, att, value):
+def add_attribute(i, j, value):
     """ adds a new attribute to the object """
-    if not hasattr(obj, "__dict__"):
+    if not hasattr(i, "__dict__"):
         raise TypeError("can't add new attribute")
-    setattr(obj, att, value)
+    setattr(i, j, value)
