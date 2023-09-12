@@ -11,3 +11,4 @@
 10-student.py - a class Student that defines a student by: (based on 9-student.py)
 11-student.py - a class Student that defines a student by: (based on 10-student.py)
 12-main.py - a function that returns a list of lists of integers epresenting the Pascal’s triangle of n
+100-append_after.py - a function that inserts a line of text to a file, after each line containing a specific string
