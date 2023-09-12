@@ -8,3 +8,4 @@
 7-base_geometry.py - a class BaseGeometry (based on 6-base_geometry.py).
 8-rectangle.py - a class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
 9-rectangle.py - a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
+10-square.py - a class Square that inherits from Rectangle (9-rectangle.py
