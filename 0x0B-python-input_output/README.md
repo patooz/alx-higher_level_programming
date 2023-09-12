@@ -10,3 +10,4 @@
 9-student.py - a class Student that defines a student
 10-student.py - a class Student that defines a student by: (based on 9-student.py)
 11-student.py - a class Student that defines a student by: (based on 10-student.py)
+12-main.py - a function that returns a list of lists of integers epresenting the Pascal’s triangle of n
