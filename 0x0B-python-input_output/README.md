@@ -9,3 +9,4 @@
 8-class_to_json.py - a function that returns the dictionary description with simple data structure
 9-student.py - a class Student that defines a student
 10-student.py - a class Student that defines a student by: (based on 9-student.py)
+11-student.py - a class Student that defines a student by: (based on 10-student.py)
